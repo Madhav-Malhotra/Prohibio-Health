@@ -13,5 +13,7 @@ I have attached a copy of what the final test and train data looks like before b
 
 # Other resources
 Prohibio Health Website: https://paige-gugeler.github.io/Prohibio-Health-Website/
+
 Project Article: https://medium.com/@miaisakovic/mitigating-the-impact-of-parasitic-outbreaks-e14a4212ba68
+
 Prohibio Health Business Pitch: https://www.youtube.com/watch?v=BNuZ9z9iZHM&feature=youtu.be
