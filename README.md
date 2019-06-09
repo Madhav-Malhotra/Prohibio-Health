@@ -12,6 +12,6 @@ The main.py file converts the processed csv data to a Tensorflow dataset and the
 I have attached a copy of what the final test and train data looks like before being used in the neural network (testLPO.csv and trainLPO.csv).
 
 # Other resources
-Prohibio Health Website: https://paige-gugeler.github.io/Prohibio-Health-Website/ \n
-Project Article: https://medium.com/@miaisakovic/mitigating-the-impact-of-parasitic-outbreaks-e14a4212ba68 \n
-Prohibio Health Business Pitch: https://www.youtube.com/watch?v=BNuZ9z9iZHM&feature=youtu.be \n
+Prohibio Health Website: https://paige-gugeler.github.io/Prohibio-Health-Website/
+Project Article: https://medium.com/@miaisakovic/mitigating-the-impact-of-parasitic-outbreaks-e14a4212ba68
+Prohibio Health Business Pitch: https://www.youtube.com/watch?v=BNuZ9z9iZHM&feature=youtu.be
