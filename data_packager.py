@@ -1,3 +1,11 @@
+### Prohibio Health - Climate Mosquito Model Data Packager
+### Madhav Malhotra
+### Under Guidance of Yacov Iland, Jim Fare, and Ashu Syal
+### This project takes open source research data on 
+### climate and mosquito populations in Manatee County, 
+### Florida. It then creates a predictive model for
+### mosquito populations based on the climate data.
+
 import csv
 
 #Processing raw precipitation data
@@ -197,3 +205,39 @@ with open('Final-processed.csv', 'w') as outputFP:
 
   #As Mr. Fare said, ALWAYS close your files...
   outputFP.close();
+
+#Splitting processed data into train:test (8:2)
+with open('Final-processed.csv', 'r') as inputFP:
+  with open('Final-train.csv', 'w') as outputFTrain:
+    with open('Final-test.csv', 'w') as outputFTest:
+      FPReader = csv.reader(inputFP); #All data
+      FTrainWriter = csv.writer( #To write train file
+        outputFTrain,
+        quoting = csv.QUOTE_ALL);
+      FTestWriter = csv.writer( #To write test file
+        outputFTest,
+        quoting = csv.QUOTE_ALL);
+      
+      headerRow = next(FPReader, None); #Gets csv headings
+      outputRaw = []; #Copy of all data
+
+      for row in FPReader:
+        outputRaw.append(row); 
+      
+      #80% of all data
+      outputTest = outputRaw[:6401];
+      #Adds csv header
+      outputTest.insert(0, headerRow);
+      #Outputs test data
+      FTrainWriter.writerows(outputTest);
+
+      #20% of all data
+      outputTrain = outputRaw[6401:];
+      #Adds csv header
+      outputTrain.insert(0, headerRow);
+      #Output train data
+      FTestWriter.writerows(outputTrain);
+
+      outputFTest.close();
+    outputFTrain.close();
+  inputFP.close();

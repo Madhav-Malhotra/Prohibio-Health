@@ -1,3 +1,11 @@
+### Prohibio Health - Climate Mosquito Model
+### Madhav Malhotra
+### Under Guidance of Yacov Iland, Jim Fare, and Ashu Syal
+### This project takes open source research data on 
+### climate and mosquito populations in Manatee County, 
+### Florida. It then creates a predictive model for
+### mosquito populations based on the climate data.
+
 import tensorflow as tf 
 import numpy
 import csv
